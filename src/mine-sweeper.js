@@ -76,7 +76,7 @@ function minesweeper(matrix) {
           gameField[nextRow][j] += 1;
           gameField[nextRow][nextColumn] += 1;
           gameField[i][previousColumn] += 1;
-         } else if(i!==0 && i!==matrixLength && j==matrixWidth) {
+         } else if(i!==0 && i!==matrixLength && j===matrixWidth) {
           gameField[previousRow][j] += 1;
           gameField[previousRow][previousColumn] += 1;
           gameField[i][previousColumn] += 1;
@@ -90,7 +90,7 @@ function minesweeper(matrix) {
           gameField[i][nextColumn] += 1;
          } else if(i!==0 && i!==matrixLength && j===0) {
           gameField[previousRow][j] += 1;
-          gameField[previousRow][nextColumn] += 1;;
+          gameField[previousRow][nextColumn] += 1;
           gameField[i][nextColumn] += 1;
           gameField[nextRow][nextColumn] += 1;
           gameField[nextRow][j] += 1;
